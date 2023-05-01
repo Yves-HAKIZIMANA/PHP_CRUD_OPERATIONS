@@ -42,6 +42,10 @@ $result = $connection->query($sql);
 
         <a href="create.php" class="btn btn-info mb-4 ">Add a new student</a>
 
+        <form action="export-pdf.php" method="post" class="mb-4">
+          <input type="submit" name="submit" class="btn btn-danger" value="Export to PDF">
+        </form>
+
         <table class="table table-hover text-center">
           <thead class="table-success">
               <tr>
@@ -51,6 +55,7 @@ $result = $connection->query($sql);
                 <th scope="col">Email</th>
                 <th scope="col">Gender</th>
                 <th scope="col">Action</th>
+                
 
               </tr>
             </thead>
