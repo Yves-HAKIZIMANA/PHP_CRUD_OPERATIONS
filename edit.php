@@ -42,13 +42,13 @@ if(isset($_POST['submit'])){
     <title>Crud Application</title>
 </head>
 <body>
-    <nav class="navbar navbar-light justify-content-center fs-3 mb-5" style="background-color: #00ff5573;">
-    PHP COMPLETE CRUD APPLICATION</nav>
+    <nav class="navbar navbar-light justify-content-center fs-3 mb-5" style="background-color: cyan;">
+   STUDENT MANAGEMENT SYSTEM</nav>
     <!-- Bootstrap -->
 
     <div class="container">
         <div class="text-center mb-4">
-            <h3>Update your information</h3>
+            <h3>Update student information</h3>
             <p class="text-muted">Click update after updating any information</p>
         </div>
 
@@ -79,17 +79,17 @@ if(isset($_POST['submit'])){
                     </div>
                     <div class="form-group mb-3">
                         <label>Gender:</label> &nbsp;
-                        <input type="radio" class="form-check-input" name="gender" id="male" value="male" <?php echo ($row['gender'] == 'male')? "checked":"" ?> >
+                        <input type="radio" class="form-check-input" name="gender" id="male" value="male" <?php echo ($row['gender'] == 'Male')? "checked":"" ?> >
                         <label for="male" class="form-input-label">Male</label>
                         &nbsp;
                         <label>Gender:</label>
-                        <input type="radio" class="form-check-input" name="gender" id="female" value="female" <?php echo ($row['gender']) == 'female'? "checked":""?>>
+                        <input type="radio" class="form-check-input" name="gender" id="female" value="female" <?php echo ($row['gender']) == 'Female'? "checked":""?>>
                         <label for="female" class="form-input-label">Female</label>
                          
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-success" name="submit">Update</button>
-                        <a href="index.php" class="btn btn-danger">Cancel</a>
+                        <button type="submit" class="btn btn-info" name="submit">Update</button>
+                        <a href="index.php" class="btn btn-success">Cancel</a>
                     </div>
                 </div>
             </form>

@@ -19,8 +19,8 @@ $result = $connection->query($sql);
     <title>Crud Application</title>
 </head>
 <body>
-    <nav class="navbar navbar-light justify-content-center fs-4 mb-5" style="background-color: #00ff5573;">
-    PHP COMPLETE CRUD APPLICATION</nav>
+    <nav class="navbar navbar-light justify-content-center fs-4 mb-5" style="background-color: cyan;">
+    Student_Management_System</nav>
     
     <?php
       $msg = $_GET['msg'];
@@ -40,10 +40,10 @@ $result = $connection->query($sql);
     <div class="container">
 
 
-        <a href="create.php" class="btn btn-dark mb-4 ">Add a new user</a>
+        <a href="create.php" class="btn btn-info mb-4 ">Add a new student</a>
 
         <table class="table table-hover text-center">
-          <thead class="table-dark">
+          <thead class="table-success">
               <tr>
                 <th scope="col">ID</th>
                 <th scope="col">FirstName</th>
@@ -70,8 +70,8 @@ $result = $connection->query($sql);
                 <td><?php echo $row['email'] ?></td>
                 <td><?php echo $row['gender'] ?></td>
                 <td>
-                  <a href="edit.php?id=<?php echo $row['id']?>" class="link-dark"><i class="fa-solid fa-pen-to-square fs-5 me-3"></i></a>
-                  <a href="delete.php?id=<?php echo $row['id']?>" class="link-dark"><i class="fa-solid fa-trash fs-5 "></i></a>
+                  <a href="edit.php?id=<?php echo $row['id']?>" class="link-info"><i class="fa-solid fa-pen-to-square fs-5 me-3"></i></a>
+                  <a href="delete.php?id=<?php echo $row['id']?>" class="link-info"><i class="fa-solid fa-trash fs-5 "></i></a>
                 </td>
               </tr>
                 <?php
