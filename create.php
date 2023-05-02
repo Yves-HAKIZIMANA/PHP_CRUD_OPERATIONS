@@ -74,7 +74,7 @@ if(isset($_POST['submit'])){
                         <label for="male" class="form-input-label">Male</label>
                         &nbsp;
                         <label>Gender:</label>
-                        <input type="radio" class="form-check-input" name="gender" id="female" value="Female">
+                        <input type="radio" class="form-check-input" name="gender" id="Female" value="Female">
                         <label for="female" class="form-input-label">Female</label>
                          
                     </div>
